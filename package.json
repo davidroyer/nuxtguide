@@ -1,9 +1,9 @@
 {
-  "name": "nuxt-book",
+  "name": "nuxtguide",
   "version": "0.0.0",
-  "description": "Nuxt EBook",
+  "description": "Nuxt.js Guide website",
   "main": "index.js",
-  "repository": "https://github.com/davidroyer/nuxt-book",
+  "repository": "https://github.com/davidroyer/nuxtguide",
   "author": "David Royer",
   "license": "MIT",
   "private": true,
