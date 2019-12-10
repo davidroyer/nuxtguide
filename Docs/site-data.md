@@ -1,19 +1,19 @@
 # Site/App Data
 
-> Tips of using `YAML` and `JSON` to seperate out data from our code.
+> Tips of using `YAML` and `JSON` to seperate data from our code.
 
 While this can be done in a `JSON` file and it seems to be more common, I prefer to use
-YAML because of how clean and easy it write and read it is.
+YAML because of how easy it is to read and write.
 
-By using `js-yaml-loader`, it gets imported as JS which is exactly how JSON is
+By using `js-yaml-loader`, the data gets imported as JavaScript `Object` or `Array` which is exactly how JSON is
 imported by Webpack.
 
-There are many use cases and this is just one of them show below to illustrate
-the concept.
+There are many use cases. This is just one of them shown below to illustrate
+this concept.
 
 ## Example
 
-**`db/site.yaml`**
+**`db/site.yml`**
 
 ```yaml
 nav:
