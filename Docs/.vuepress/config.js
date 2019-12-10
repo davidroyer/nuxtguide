@@ -11,7 +11,8 @@ const Site = {
     "Provides code snippets, solutions to common problems, and a resource for Nuxt.js developers.",
   ogType: "website",
   ogImage: "images/main-banner.png",
-  twitterUsername: "@DavidRoyer_"
+  twitterUsername: "@DavidRoyer_",
+  analyticsId: "UA-56060335-9"
 }
 
 module.exports = {
@@ -89,7 +90,7 @@ module.exports = {
     [
       "@vuepress/google-analytics",
       {
-        ga: "UA-56060335-8"
+        ga: Site.analyticsId
       }
     ]
   ]
