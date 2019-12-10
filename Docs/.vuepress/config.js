@@ -1,18 +1,18 @@
-const path = require("path");
-const { generateVPressSidebar } = require("../../vpress-navinator");
-const vpressNavigatorPath = path.join(process.cwd(), "vpress-navinator.js");
+const path = require("path")
+const { generateVPressSidebar } = require("../../vpress-navinator")
+const vpressNavigatorPath = path.join(process.cwd(), "vpress-navinator.js")
 
-console.log("FROM ROOT LIKE I WANTED");
+console.log("FROM ROOT LIKE I WANTED")
 
 const Site = {
-  url: "https://learningnuxt.tech",
+  url: "https://nuxtguide.com",
   title: "Nuxt Guide",
   description:
     "Provides code snippets, solutions to common problems, and a resource for Nuxt.js developers.",
   ogType: "website",
   ogImage: "images/main-banner.png",
   twitterUsername: "@DavidRoyer_"
-};
+}
 
 module.exports = {
   title: Site.title,
@@ -46,8 +46,8 @@ module.exports = {
   // },
   markdown: {
     extendMarkdown: md => {
-      md.set({ html: true });
-      md.use(require("markdown-it-admonition"));
+      md.set({ html: true })
+      md.use(require("markdown-it-admonition"))
     }
   },
 
@@ -66,7 +66,7 @@ module.exports = {
           "@public": path.join(__dirname, "./public")
         }
       }
-    };
+    }
   },
 
   plugins: [
@@ -93,4 +93,4 @@ module.exports = {
       }
     ]
   ]
-};
+}
