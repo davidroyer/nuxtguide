@@ -18,7 +18,7 @@ now --prod
 ### Secrets for `env` variables
 
 ```bash
-now --prod
+now secrets add [secret-name] [secret-value]
 ```
 
 ## Universal Apps
@@ -41,7 +41,8 @@ I had to add the following to the project's `package.json` file though.
 ### Step 1: Set The Secret Key
 
 ```bash
-now secret api-key ApiKeyValue123
+now secrets add api-key ApiKeyValue123
+
 ```
 
 ### Step 2: Setup `env` variables in `now.json`
@@ -67,14 +68,14 @@ export default {
   env: {
     API_KEY: process.env.API_KEY
   }
-};
+}
 ```
 
 !!! info FYI
 The format for using the secret via the `NOW CLI` is as follows:
 
 ```bash
-now secret add [name] [value]
+now secret add [secret-name] [secret-value]
 ```
 
 The **[value]** is the secret value you are wanting to keep private.
